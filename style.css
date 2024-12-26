@@ -1,0 +1,116 @@
+/* Basic styles for the app */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(to right, #0d8de9, #2575fc); /* Gradient background */
+    margin: 0;
+    padding: 20px;
+}
+
+.todo-app {
+    max-width: 600px;
+    margin: auto;
+    background: rgb(233, 221, 221); /* White background for the app */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(193, 161, 161, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between title and icon */
+    align-items: center; /* Center vertically */
+    padding: 10px 0;
+}
+
+h1 {
+    color: #4a4545; /* Dark gray */
+    margin: 0; /* Remove default margin */
+}
+
+.icon {
+    width: 40px; /* Adjust icon size */
+    height: 40px; /* Adjust icon size */
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between; /* Space between input and button */
+}
+
+input {
+    flex: 1; /* Allow input to take available space */
+    padding: 12px;
+    margin-right: 10px; /* Space between input and button */
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.task-lists {
+    display: flex; /* Flexbox for side-by-side layout */
+    justify-content: space-between; /* Space between task lists */
+    margin-top: 20px;
+}
+
+.task-list {
+    flex: 1; /* Allow each task list to take equal space */
+    margin-right: 10px; /* Space between task lists */
+}
+
+.task-list:last-child {
+    margin-right: 0; /* Remove margin for the last task list */
+}
+
+h2 {
+    color: #495057; /* Medium gray */
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding:  10px;
+    border-bottom: 1px solid #e9ecef; /* Light gray border for separation */
+}
+
+li .note {
+    display: block; /* Display note on a new line */
+    margin-top: 5px; /* Space above the note */
+    font-size: 14px; /* Smaller font for notes */
+    color: #6c757d; /* Gray color for notes */
+}
+
+.task-icon {
+    width: 20px; /* Adjust icon size */
+    height: 20px; /* Adjust icon size */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.delete-button {
+    margin-left: auto; /* Push delete button to the right */
+    background: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #dc3545; /* Bootstrap danger color */
+    font-size: 18px; /* Font size for delete button */
+}
